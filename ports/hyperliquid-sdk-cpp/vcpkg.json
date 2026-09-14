@@ -1,0 +1,31 @@
+{
+  "name": "hyperliquid-sdk-cpp",
+  "version": "0.1.1",
+  "description": "A C++23 SDK for the Hyperliquid perpetuals, spot, and prediction-market API - REST and WebSocket, with typed request/response models.",
+  "homepage": "https://github.com/TuxedoFish/hyperliquid-sdk-cpp",
+  "license": "MIT",
+  "dependencies": [
+    "boost-asio",
+    "boost-beast",
+    "boost-system",
+    "nlohmann-json",
+    "openssl",
+    {
+      "name": "secp256k1",
+      "features": [
+        "recovery"
+      ]
+    },
+    "simdjson",
+    "spdlog",
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    },
+    "zlib"
+  ]
+}
